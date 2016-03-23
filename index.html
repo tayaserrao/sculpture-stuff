@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> QP </title>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(document).ready(function(){
+
+$(".numberone").click(function(){
+  $(".numberonelittle").toggleClass("numberonebig");
+})
+
+$(".numbertwo").click(function(){
+  $(".numbertwolittle").toggleClass("numbertwobig");
+})
+
+$(".numberthree").click(function(){
+  $(".numberthreelittle").toggleClass("numberthreebig");
+})
+
+$(".circleRed").click(function(){
+  $(".little").toggleClass("big");
+})
+
+$(".orange").click(function(){
+  $(".orangelittle").toggleClass("orangebig");
+})
+
+$(".yellow").click(function(){
+  $(".yellowlittle").toggleClass("yellowbig");
+})
+$(".green").click(function(){
+  $(".greenlittle").toggleClass("greenbig");
+})
+
+$(".blue").click(function(){
+  $(".bluelittle").toggleClass("bluebig");
+})
+
+$(".purple").click(function(){
+  $(".purplelittle").toggleClass("purplebig");
+})
+
+$(".bigred").click(function(){
+  $(".bigredlittle").toggleClass("bigredbig");
+})
+
+$(".bigwhite").click(function(){
+  $(".bigwhitelittle").toggleClass("bigwhitebig");
+})
+
+$(".bigblack").click(function(){
+  $(".bigblacklittle").toggleClass("bigblackbig");
+})
+
+
+});
+</script>
+<style>
+
+/*#ONE{
+  background-image: url("http://cdn2.pacifichorticulture.org/wp-content/uploads/2011/10/Wilbur.01.MorningDogs.jpg");
+width: 1500px;
+height: 1500px;
+}*/
+
+
+.numberonelittle{
+  position: absolute;
+  background-image: url("http://cdn2.pacifichorticulture.org/wp-content/uploads/2011/10/Wilbur.01.MorningDogs.jpg");
+  left: -3000px;
+  top: 15px;
+  width: 973px;
+  height: 584px;
+  -webkit-transition: top 1s, left 4s, height 3s, background-color 1s ease;
+}
+.numberonebig{
+  left: 15px;
+}
+.numberone{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 157px;
+  left: 30px;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 3;
+
+  }
+
+  .numbertwolittle{
+    position: absolute;
+    background-image: url("http://members.tripod.com/~TT80/gifs/huevos2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    left: -3000px;
+    top: 550px;
+    width: 973px;
+    height: 213px;
+    -webkit-transition: top 1s, left 4s, height 3s, background-color 1s ease;
+  }
+  .numbertwobig{
+    left: 20px;
+  }
+  .numbertwo{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 70px;
+    left: 30px;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 4;
+
+    }
+
+    .numberthreelittle{
+      position: absolute;
+      background-image: url("http://www.eosnap.com/public/media/2012/02/venezuela/20120103-venezuela1-thumb.jpg ");
+      background-repeat: no-repeat;
+      opacity: 0.7;
+      background-size:cover;
+      left: -3000px;
+      top: 50px;
+      width: 495px;
+      height: 495px;
+      -webkit-transition: top 1s, left 4s, height 3s, background-color 1s ease;
+    }
+    .numberthreebig{
+      left: 200px;
+    }
+    .numberthree{
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: 113px;
+      left: 30px;
+      background-color: white;
+      border: 1px solid black;
+      z-index: 5;
+
+      }
+
+
+
+
+.circleRed{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border: 3px solid white;
+  border-radius: 100%;
+  background-color: #437064;
+  top: 235px;
+  left: 174px;
+}
+
+.little{
+  position: absolute;
+  height: 20px;
+  width: 50px;
+  top: -200px;
+  left:-100px;
+  border: 2px solid black;
+  background-color: black;
+  -webkit-transition: top 1s, left 1s, height 3s, background-color 1s ease;
+}
+
+.big{
+height: 100px;
+  width: 150px;
+  top: 100px;
+  left: 400px;
+  background-color: ;
+}
+
+.orange{
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border: 2px solid red;
+  border-radius: 100%;
+  background-color: grey;
+  top: 20px;
+  left: 350px;
+
+}
+
+.orangelittle{
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  top: -1000px;
+  left: -1000px;
+  border: 1px solid white;
+  background-color: red;
+  -webkit-transition: top 1s, left 1s, height 3s, background-color 1s ease;
+  }
+
+  .orangebig{
+    top: 179px;
+    left: 583px;
+  }
+
+.yellow{
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border: 1px solid white;
+  border-radius: 100%;
+  background-color: #00ace6;
+  top: 50px;
+  left: 800px;
+  }
+
+  .yellowlittle{
+    position: absolute;
+    height: 10px;
+    color: white;
+    font-size: 0.2em;
+    width: 90px;
+    top: -500px;
+    left: -500px;
+    border: 1px solid black;
+    background-color: black;
+    -webkit-transition: top 1s, left 1s, height 4s, background-color 1s ease;
+    }
+
+    .yellowbig{
+      top: 100px;
+      left: 900px;
+      height: 160px;
+
+
+
+    }
+
+.green{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border: 2px solid black;
+  border-radius: 100%;
+  background-color: #007a99;
+  top: 250px;
+  left: 400px;
+}
+
+.greenlittle{
+position: absolute;
+color: red;
+height: 20px;
+width: 90px;
+top: -600px;
+left: -600px;
+border: 1px solid white;
+background-color: white;
+-webkit-transition: top 2s, left 2s, height 3s, background-color 1s ease;}
+
+.greenbig{
+  top: 220px;
+  left: 10px;
+  height: 180px;
+
+}
+
+.blue{
+  position: absolute;
+  height: 10px;
+
+  width: 10px;
+  border: 1px solid white;
+  border-radius: 100%;
+  background-color: black;
+  top: 290px;
+  left: 500px;
+
+}
+
+.bluelittle{
+  position: absolute;
+  color: white;
+  height: 186px;
+  width: 955px;
+  top: 420px;
+  left: -1600px;
+  border: 1px solid grey;
+  background-color: black;
+  -webkit-transition: top 2s, left 6s, height 3s, background-color 5s ease;}
+
+.bluebig{
+left: 20px;
+}
+.purple{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border: 2px solid black;
+  border-radius: 100%;
+  background-color: black;
+  top: 20px;
+  left: 900px;
+  z-index: 3;
+}
+
+.purplelittle{
+  position: absolute;
+  height: 126px;
+  width: 1055px;
+  top: 10px;
+  left: -1600px;
+  border: 1px solid white;
+  opacity: 0.9;
+  background-color: white;
+  -webkit-transition: top 2s, left 6s, height 3s, background-color 5s ease;}
+
+.purplebig{
+  left: 10px;
+}
+
+.bigred{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border: 3px solid #007acc ;
+  border-radius: 100%;
+  background-color: #305047;
+  top: 420px;
+  left: 700px;
+}
+
+.bigredlittle{
+  position: absolute;
+  height: 10px;
+  width: 955px;
+  top: 400px;
+  left: -1500px;
+  border: 1px solid black;
+  background-color: black;
+  -webkit-transition: top 2s, left 3s, height 3s, background-color 1s ease;}
+
+.bigredbig{
+  left: 1800px;
+}
+
+.bigwhite{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border: 5px solid #b3e6ff;
+  border-radius: 100%;
+  background-color: #ffe6b3;
+  top: 290px;
+  left: 810px;
+}
+
+.bigwhitelittle{
+  position: absolute;
+  height: 10px;
+  width: 955px;
+  top: 220px;
+  left: -1700px;
+  border: 1px solid #b3e6ff;
+  background-color: ;
+  -webkit-transition: top 2s, left 0.5s, height 3s, background-color 1s ease;}
+
+.bigwhitebig {
+  left: 2000px;
+}
+
+
+
+
+
+/*http://www.eosnap.com/public/media/2012/02/venezuela/20120103-venezuela1-thumb.jpg*/
+.bigblack{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border: 2px solid #ffe6b3;
+  border-radius: 100%;
+  background-color: #b3e6ff;
+  top: 500px;
+  left: 20px;
+}
+
+
+.bigblacklittle{
+  position: absolute;
+  height: 90px;
+  width: 955px;
+  top: 220px;
+  left: -1900px;
+  border: 1px solid white;
+  background-color: #ccf2ff;
+  -webkit-transition: top 2s, left 2s, height 3s, background-color 1s ease;}
+
+
+.bigblackbig{
+left: 20px;
+}
+
+
+
+
+  </style>
+
+
+</head>
+<body id="ONE">
+<div id="TWO"></div>
+<div class="numberone"></div>
+<div class="numberonelittle"></div>
+<div class="numberonebig"></div>
+
+<div class="numbertwo"></div>
+<div class="numbertwolittle"></div>
+<div class="numbertwobig"></div>
+
+<div class="numberthree"></div>
+<div class="numberthreelittle"></div>
+<div class="numberthreebig"></div>
+
+<div class="little"></div>
+<div class="circleRed"></div>
+<div class="big"></div>
+
+
+<div class="orange"></div>
+
+<div class="yellow"></div>
+
+
+
+<div class="green"></div>
+<div class="blue"></div>
+<div class="white"></div>
+<div class="purple"></div>
+<div class="grey"></div>
+<div class="bigred"></div>
+<div class="bigblack"></div>
+<div class="bigwhite"></div>
+
+<div class="orangebig"></div>
+<div class="orangelittle"></div>
+
+<div class="yellowlittle"> The "Bocas del Dragon" is the name of the straits separating the Gulf of Paria from the Caribbean Sea. The Boca Grande or Grand Boca separates Chacachacare from the Paria Peninsula and Patos Island of Venezuela. The international border between Trinidad and Venezuela runs through this strait </div>
+<div class="yellowbig"></div>
+
+<div class="greenlittle"> BOCAS DEL DRAGON, North Coast, NW Trinidad 10°45'0"N, 61°46'0"W </div>
+<div class="greenbig"></div>
+
+<div class="bluebig"></div>
+<div class="bluelittle"> Never dive in this area! Stay above the surface or try to find something to float! You can sometimes dive below the waves and avoid the bad currents but thats only if you are a really good swimmer. I did that once at Maracas and I ended up getting tumbled underwater so badly that
+I couldn't feel gravity anymore and I lost my alignment to the earth . When I found it again, swimming and finding the shore, I remember feeling like I had been hollowed out. </div>
+
+<div class="purplebig"></div>
+<div class="purplelittle"></div>
+
+<div class="bigredbig"></div>
+<div class="bigredlittle"></div>
+
+<div class="bigwhitebig"></div>
+<div class="bigwhitelittle"></div>
+
+<div class="bigblackbig"></div>
+<div class="bigblacklittle"> The water is great for most months of the year! </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
